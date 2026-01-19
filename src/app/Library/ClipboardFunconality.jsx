@@ -18,9 +18,9 @@ export default function ClipboardFunconality({ text }) {
   };
 
   return (
-    <div className="flex items-center gap-3 bg-gray-100 p-4 rounded-lg border max-w-xl">
+    <div className="flex flex-col items-center gap-3 bg-gray-100 p-10 rounded-lg border max-w-xl">
       {/* Text Area */}
-      <span className="flex-1 text-sm text-gray-800 truncate">
+      <span className="flex-1 text-sm text-gray-800 ">
         {text}
       </span>
 

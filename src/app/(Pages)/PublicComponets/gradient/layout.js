@@ -8,7 +8,7 @@ function layout({children}) {
         
         <div className='border-2 flex justify-center gap-56'>
             <button className='btn bg-amber-200 text-black'><Link href="/PublicComponets/gradient/garidentprivew">Privew</Link></button>
-            <button className='btn bg-amber-200 text-black'><Link href="#">Code</Link></button>
+            <button className='btn bg-amber-200 text-black'><Link href="/PublicComponets/gradient/gradientCode">Code</Link></button>
         </div>
       </div>
       <div>
