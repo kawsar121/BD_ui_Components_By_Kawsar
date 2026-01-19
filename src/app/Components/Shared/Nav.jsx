@@ -4,7 +4,7 @@ import React from 'react'
 function Nav() {
   const links = <>
         <li><Link href="/">Home</Link></li>
-        <li><Link href="/uiComponents">Components</Link></li>
+        <li><Link href="/PublicComponets">Components</Link></li>
         <li><Link href="/about">About</Link></li>
         
   </>

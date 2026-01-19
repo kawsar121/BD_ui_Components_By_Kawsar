@@ -1,0 +1,21 @@
+import Link from 'next/link'
+import React from 'react'
+
+function layout({children}) {
+  return (
+    <div>
+      <div>
+        
+        <div className='border-2 flex justify-center gap-56'>
+            <button className='btn bg-amber-200 text-black'><Link href="/PublicComponets/gradient/garidentprivew">Privew</Link></button>
+            <button className='btn bg-amber-200 text-black'><Link href="#">Code</Link></button>
+        </div>
+      </div>
+      <div>
+        {children}
+      </div>
+    </div>
+  )
+}
+
+export default layout
