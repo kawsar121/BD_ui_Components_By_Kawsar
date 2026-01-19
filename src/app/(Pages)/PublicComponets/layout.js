@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function ComponentsList({ children }) {
   return (
-    <div className="flex min-h-screen bg-gray-100 gap-12">
+    <div className="flex  min-h-screen bg-gray-100 gap-20">
 
       {/* Left Menu */}
-      <aside className="w-64 bg-gray-200 p-4">
+      <aside className="w-52 bg-gray-200 p-4">
         <h2 className="text-xl font-bold mb-4">Products</h2>
 
         <ul className="space-y-2">
@@ -28,8 +28,8 @@ export default function ComponentsList({ children }) {
       </aside>
 
       {/* Center Content */}
-      <main className="flex-1 p-6">
-        <div className="mx-auto max-w-4xl bg-white p-6 rounded shadow">
+      <main className="mt-4">
+        <div className="mx-auto max-w-4xl bg-white rounded shadow">
           {children}
         </div>
       </main>

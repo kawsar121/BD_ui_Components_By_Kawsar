@@ -8,26 +8,24 @@ export default function ClipboardFunconality({ text }) {
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);
-
-      setTimeout(() => {
-        setCopied(false);
-      }, 2000);
+      setTimeout(() => setCopied(false), 2000);
     } catch (err) {
       console.error("Copy failed", err);
     }
   };
 
   return (
-    <div className="flex flex-col items-center gap-3 bg-gray-100 p-10 rounded-lg border max-w-xl">
-      {/* Text Area */}
-      <span className="flex-1 text-sm text-gray-800 ">
-        {text}
-      </span>
+    <div className="bg-gray-900 text-gray-100 p-6 rounded-lg border max-w-2xl relative">
+
+      {/* Code Block */}
+      <pre className="text-sm font-mono whitespace-pre overflow-x-auto">
+        <code>{text}</code>
+      </pre>
 
       {/* Copy Button */}
       <button
         onClick={handleCopy}
-        className={`px-4 py-2 text-sm rounded transition
+        className={`absolute top-3 right-3 px-3 py-1 text-xs rounded transition
           ${
             copied
               ? "bg-green-500 text-white"
