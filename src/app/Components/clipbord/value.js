@@ -5,4 +5,5 @@ npm run dev
 # Build
 npm run build
 npm start
+ok
 `;
