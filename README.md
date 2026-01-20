@@ -1,4 +1,4 @@
-# 🇧🇩 BD UI Components by Kawsar
+#  BD UI Components by Kawsar
 
 A modern and reusable **UI Components Library** built with **Next.js** and **Tailwind CSS**, inspired by **DaisyUI**.  
 Designed to help developers build clean, responsive, and scalable user interfaces faster.
