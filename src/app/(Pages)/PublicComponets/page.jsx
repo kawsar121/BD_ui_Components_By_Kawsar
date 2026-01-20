@@ -1,9 +1,10 @@
 import React from 'react'
+import InstallContent from './install/page'
 
 function page() {
   return (
     <div>
-      <h1>Start With Components</h1>
+      <InstallContent></InstallContent>
     </div>
   )
 }
