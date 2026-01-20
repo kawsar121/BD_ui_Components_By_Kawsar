@@ -1,13 +1,13 @@
 import ClipboardFunconality from '@/app/Library/ClipboardFunconality'
 import React from 'react'
-import { Clipboardtext } from './value'
+import ClipCode from './clipCode/page'
+
 
 function Clipbord() {
   return (
     <div>
       <h1>
-        This is clipboard
-        <ClipboardFunconality text={Clipboardtext}></ClipboardFunconality>
+         <ClipCode></ClipCode>
       </h1>
     </div>
   )

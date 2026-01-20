@@ -5,7 +5,12 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "main-gradient":
+          "linear-gradient(35deg, rgb(6,0,151) 0%, rgb(130,4,255) 73%, rgb(193,15,255) 100%)",
+      },
+    },
   },
   plugins: [require("daisyui")],
 };

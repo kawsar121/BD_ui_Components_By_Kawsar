@@ -12,7 +12,7 @@ export default function Home() {
         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
         quasi. In deleniti eaque aut repudiandae et a id nisi.
       </p>
-      <button className="btn btn-primary"><Link href="#">Get Started</Link></button>
+      <button className="btn btn-primary"><Link href="/PublicComponets">Get Started</Link></button>
     </div>
   </div>
 </div>
