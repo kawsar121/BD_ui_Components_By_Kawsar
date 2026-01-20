@@ -1,4 +1,4 @@
-#  BD UI Components by Kawsar
+#  BD UI Components By Kawsar
 
 A modern and reusable **UI Components Library** built with **Next.js** and **Tailwind CSS**, inspired by **DaisyUI**.  
 Designed to help developers build clean, responsive, and scalable user interfaces faster.
@@ -21,7 +21,7 @@ Designed to help developers build clean, responsive, and scalable user interface
 - **Next.js**
 - **React**
 - **Tailwind CSS**
-- **DaisyUI (Inspiration)**
+- **Mongo DB**
 
 ---
 
@@ -29,9 +29,10 @@ Designed to help developers build clean, responsive, and scalable user interface
 
 ```bash
 app/
-├─ components/
+├─ PublicComponents/
 │  ├─ clipboard/
 │  │  └─ page.jsx
+│  │    └─ value.js
 │  ├─ buttons/
 │  │  └─ page.jsx
 │  └─ layout.jsx
@@ -73,6 +74,8 @@ Open 👉 http://localhost:3000
 ⏳ Modals
 
 ⏳ Navbar
+
+⏳ Gradient
 
 More components will be added regularly 🚧
 
