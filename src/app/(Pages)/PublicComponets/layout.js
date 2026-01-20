@@ -10,6 +10,11 @@ export default function ComponentsList({ children }) {
 
         <ul className="space-y-2">
           <li>
+            <Link href="/PublicComponets/install" className="block p-2 bg-white rounded hover:bg-gray-300">
+              Install
+            </Link>
+          </li>
+          <li>
             <Link href="/PublicComponets/clipbord" className="block p-2 bg-white rounded hover:bg-gray-300">
               Clipbord
             </Link>
@@ -17,11 +22,6 @@ export default function ComponentsList({ children }) {
           <li>
             <Link href="/PublicComponets/gradient" className="block p-2 bg-white rounded hover:bg-gray-300">
               Gradient
-            </Link>
-          </li>
-          <li>
-            <Link href="/products/grocery" className="block p-2 bg-white rounded hover:bg-gray-300">
-              Grocery
             </Link>
           </li>
         </ul>

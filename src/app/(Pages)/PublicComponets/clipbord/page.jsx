@@ -1,13 +1,14 @@
 import ClipboardFunconality from '@/app/Library/ClipboardFunconality'
 import React from 'react'
-import ClipCode from './clipCode/page'
+import ClipPrivew from './clipprivew/page'
+
 
 
 function Clipbord() {
   return (
     <div>
       <h1>
-         <ClipCode></ClipCode>
+         <ClipPrivew></ClipPrivew>
       </h1>
     </div>
   )
