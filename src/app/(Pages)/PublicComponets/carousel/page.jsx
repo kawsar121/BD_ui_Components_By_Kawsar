@@ -3,7 +3,7 @@ import React from 'react'
 function page() {
   return (
     <div>
-      <h1>This is carousel  Page</h1>
+      <h1>This is carousel  Pages</h1>
     </div>
   )
 }
