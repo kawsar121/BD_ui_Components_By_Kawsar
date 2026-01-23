@@ -35,6 +35,11 @@ export default function ComponentsList({ children }) {
           Card
         </Link>
       </li>
+      <li>
+        <Link href="/PublicComponets/Button" className="block p-2 bg-white rounded hover:bg-red-500 hover:text-white">
+          Button
+        </Link>
+      </li>
     </ul>
   </aside>
 

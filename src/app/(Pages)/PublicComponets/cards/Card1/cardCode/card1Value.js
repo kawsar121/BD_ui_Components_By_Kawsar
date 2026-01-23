@@ -1,9 +1,5 @@
-import React from 'react'
-
-function CardPrivew() {
-  return (
-    <div className="max-w-sm rounded-2xl bg-white shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
-      
+export const card1Value = `
+<div className="max-w-sm rounded-2xl bg-white shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">  
       {/* Image */}
       <img
         src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
@@ -33,7 +29,4 @@ function CardPrivew() {
         </div>
       </div>
     </div>
-  )
-}
-
-export default CardPrivew
+`;
