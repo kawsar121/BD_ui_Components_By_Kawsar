@@ -1,10 +1,6 @@
-import React from 'react'
-
-function CardPrivew() {
-  return (
-     <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto">
+export const card2Value = `
+ <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto">
       <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden">
-        
         {/* Image */}
         <img
           src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
@@ -35,7 +31,4 @@ function CardPrivew() {
         </div>
       </div>
     </div>
-  )
-}
-
-export default CardPrivew
+`;

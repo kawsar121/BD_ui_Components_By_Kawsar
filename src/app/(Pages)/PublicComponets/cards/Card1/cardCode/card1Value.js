@@ -6,7 +6,6 @@ export const card1Value = `
         alt="Product"
         className="h-56 w-full object-cover"
       />
-
       {/* Content */}
       <div className="p-5">
         <h2 className="text-xl font-semibold text-gray-800">

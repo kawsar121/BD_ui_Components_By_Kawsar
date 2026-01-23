@@ -3,6 +3,7 @@ import Card1 from './Card1/page'
 import Card2 from './Card2/page'
 import Card1layout from './Card1/layout'
 import Card2layout from './Card2/layout'
+import Card3Layouts from './Card3/layout'
 
 function CardsMainPage() {
   return (
@@ -11,6 +12,7 @@ function CardsMainPage() {
       <div className='grid grid-cols-2 gap-3'>
         <Card1layout></Card1layout>
         <Card2layout></Card2layout>
+        <Card3Layouts></Card3Layouts>
       </div>
     </div>
   )
