@@ -3,7 +3,8 @@ import CardPrivew from './cardPrivew/page'
 
 function Card1() {
   return (
-    <div><h1>All oksss</h1><CardPrivew></CardPrivew></div>
+    <div><h1>All oksss</h1>
+    </div>
   )
 }
 

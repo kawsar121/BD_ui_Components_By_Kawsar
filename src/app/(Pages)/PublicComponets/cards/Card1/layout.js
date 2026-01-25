@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React, { Children } from 'react'
+import CardPrivew from './cardPrivew/page'
 
 function Card1layout({children}) {
   return (
@@ -10,6 +11,7 @@ function Card1layout({children}) {
         </div>
       <div>
         {children}
+        
       </div>
     </div>
     
