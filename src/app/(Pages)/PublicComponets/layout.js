@@ -44,14 +44,14 @@ export default function ComponentsList({ children }) {
           </Link>
         </li>
 
-        <li>
+        {/* <li>
           <Link
             href="/PublicComponets/cards"
             className="block p-2 bg-white rounded hover:bg-red-500 hover:text-white"
           >
             Card
           </Link>
-        </li>
+        </li> */}
 
         {/* 🔽 Button Dropdown */}
         <li>
@@ -73,7 +73,7 @@ export default function ComponentsList({ children }) {
             <ul className="mt-3 ml-4 space-y-3">
               <li>
                 <Link
-                  href="/PublicComponets/Button/Card1"
+                  href="/PublicComponets/cards/Card1"
                   className="block p-2 bg-gray-100 rounded hover:bg-red-400 hover:text-white"
                 >
                   Card 1
@@ -82,7 +82,7 @@ export default function ComponentsList({ children }) {
 
               <li>
                 <Link
-                  href="/PublicComponets/Button/Card2"
+                  href="/PublicComponets/cards/Card2"
                   className="block p-2 bg-gray-100 rounded hover:bg-red-400 hover:text-white"
                 >
                   Card 2
@@ -91,7 +91,7 @@ export default function ComponentsList({ children }) {
 
               <li>
                 <Link
-                  href="/PublicComponets/Button/Card3"
+                  href="/PublicComponets/cards/Card3"
                   className="block p-2 bg-gray-100 rounded hover:bg-red-400 hover:text-white"
                 >
                   Card 3
