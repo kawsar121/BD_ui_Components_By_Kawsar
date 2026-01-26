@@ -1,8 +1,8 @@
 import React from 'react'
 
-function page() {
+function Carousel2Code() {
   return (
-    <div>page</div>
+    <div>Carousel2Code</div>
   )
 }
 
