@@ -1,8 +1,9 @@
 import React from 'react'
+import ButtonPrivew from './ButtonPrivew/page'
 
 function ButtonMainPage() {
   return (
-    <div>ButtonMainPage</div>
+    <div><ButtonPrivew></ButtonPrivew></div>
   )
 }
 

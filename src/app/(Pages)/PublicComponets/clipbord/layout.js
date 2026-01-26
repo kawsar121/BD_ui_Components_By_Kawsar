@@ -13,9 +13,6 @@ function layout({children}) {
       </div>
     </div>
 
-
-
-    
   )
 }
 
