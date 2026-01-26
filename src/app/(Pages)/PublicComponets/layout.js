@@ -59,7 +59,7 @@ export default function ComponentsList({ children }) {
             onClick={() => setButtonOpen(!buttonOpen)}
             className="w-full text-left block p-2 bg-white rounded hover:bg-red-500 hover:text-white flex justify-between items-center"
           >
-            Button
+            Cards
             <span
               className={`transition-transform duration-200 ${
                 buttonOpen ? "rotate-180" : ""
@@ -136,23 +136,20 @@ export default function ComponentsList({ children }) {
       <li>
         <Link href="/PublicComponets/gradient">Gradient</Link>
       </li>
-      <li>
-        <Link href="/PublicComponets/cards">Card</Link>
-      </li>
 
       {/* 🔽 Button Dropdown */}
       <li>
         <details>
-          <summary>Button</summary>
+          <summary>Cards</summary>
           <ul className="ml-2">
             <li>
-              <Link href="/PublicComponets/Button/Card1">Card 1</Link>
+              <Link href="/PublicComponets/cards/Card1">Card 1</Link>
             </li>
             <li>
-              <Link href="/PublicComponets/Button/Card2">Card 2</Link>
+              <Link href="/PublicComponets/cards/Card2">Card 2</Link>
             </li>
             <li>
-              <Link href="/PublicComponets/Button/Card3">Card 3</Link>
+              <Link href="/PublicComponets/cards/Card3">Card 3</Link>
             </li>
           </ul>
         </details>

@@ -10,9 +10,9 @@ function CardsMainPage() {
     <div>
       <h1>This is Card Main Page</h1>
       <div className='grid grid-cols-2 gap-3'>
-        <Card1layout></Card1layout>
+        {/* <Card1layout></Card1layout>
         <Card2layout></Card2layout>
-        <Card3Layouts></Card3Layouts>
+        <Card3Layouts></Card3Layouts> */}
       </div>
     </div>
   )

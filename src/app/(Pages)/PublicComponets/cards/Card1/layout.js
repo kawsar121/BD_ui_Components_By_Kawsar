@@ -11,7 +11,6 @@ function Card1layout({children}) {
         </div>
       <div>
         {children}
-        <CardPrivew></CardPrivew>
       </div>
     </div>
     
