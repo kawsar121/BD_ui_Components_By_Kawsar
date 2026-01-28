@@ -1,4 +1,4 @@
-
+export const Carousel1value = `
 "use client";
 
 import { useState, useEffect } from "react";
@@ -26,7 +26,8 @@ const slides = [
       "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
   },
 ];
-function Carousel1Privew() {
+
+export default function Carousel() {
   const [current, setCurrent] = useState(0);
 
   // Auto slide
@@ -43,14 +44,14 @@ function Carousel1Privew() {
       {/* Slides */}
       <div
         className="flex transition-transform duration-700 ease-in-out"
-        style={{ transform: `translateX(-${current * 100}%)` }}
+        style={{ transform: 'translateX(-${current * 100}%)' }}
       >
         {slides.map((slide) => (
           <div key={slide.id} className="min-w-full relative">
             <img
               src={slide.image}
               alt={slide.title}
-              className="w-full h-[420px] object-cover"
+              className="w-full h-105 object-cover"
             />
 
             {/* Overlay */}
@@ -95,16 +96,16 @@ function Carousel1Privew() {
           <button
             key={i}
             onClick={() => setCurrent(i)}
-            className={`h-3 w-3 rounded-full transition ${
+            className={'h-3 w-3 rounded-full transition ${
               current === i
                 ? "bg-white scale-110"
                 : "bg-white/50"
-            }`}
+            }'}
           />
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Carousel1Privew
+`;
