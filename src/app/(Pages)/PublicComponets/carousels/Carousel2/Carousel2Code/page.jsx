@@ -6,4 +6,4 @@ function Carousel2Code() {
   )
 }
 
-export default page
+export default Carousel2Code

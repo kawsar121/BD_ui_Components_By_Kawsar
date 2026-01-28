@@ -8,11 +8,7 @@ export default function ComponentsList({ children }) {
     <div className="flex bg-gray-100 gap-44 min-h-screen pt-14">
       {/* Left Menu */}
       <aside
-        className="
-        bg-gray-200 p-4 overflow-y-auto
-        w-72
-        hidden lg:block
-      "
+        className="bg-gray-200 p-4 overflow-y-auto w-72 hidden lg:block"
       >
         <h2 className="text-xl font-bold mb-4">Products</h2>
 
@@ -136,6 +132,7 @@ export default function ComponentsList({ children }) {
                     Carousel 1
                   </Link>
                 </li>
+
                 <li>
                   <Link
                     href="/PublicComponets/carousels/Carousel2"
@@ -144,6 +141,7 @@ export default function ComponentsList({ children }) {
                     Carousel 2
                   </Link>
                 </li>
+
                 <li>
                   <Link
                     href="/PublicComponets/carousels/Carousel3"
@@ -155,9 +153,6 @@ export default function ComponentsList({ children }) {
               </ul>
             )}
           </li>
-
-
-
         </ul>
       </aside>
 

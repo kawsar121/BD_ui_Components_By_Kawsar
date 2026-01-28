@@ -1,8 +1,9 @@
 import React from 'react'
+import Carousel2Privew from '../Carousel2/Carousel2Privew/page'
 
 function Carousel1() {
   return (
-    <div>Carousel1 pages</div>
+    <div><Carousel2Privew></Carousel2Privew></div>
   )
 }
 
