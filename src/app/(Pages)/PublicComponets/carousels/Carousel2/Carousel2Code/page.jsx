@@ -1,8 +1,12 @@
+import ClipboardFunconality from '@/app/Library/ClipboardFunconality'
 import React from 'react'
+import { Carousel2Value } from './carousel2Value'
 
 function Carousel2Code() {
   return (
-    <div>Carousel2Code</div>
+    <div>
+      <ClipboardFunconality text={Carousel2Value}></ClipboardFunconality>
+    </div>
   )
 }
 

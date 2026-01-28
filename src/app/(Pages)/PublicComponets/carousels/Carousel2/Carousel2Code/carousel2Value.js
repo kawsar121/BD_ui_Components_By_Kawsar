@@ -1,3 +1,4 @@
+export const Carousel2Value = `
 "use client";
 
 import { useState, useEffect } from "react";
@@ -26,8 +27,8 @@ const slides = [
   },
 ];
 
-function Carousel2Privew() {
-const [current, setCurrent] = useState(0);
+export default function GlassCarousel() {
+  const [current, setCurrent] = useState(0);
 
   // Auto slide
   useEffect(() => {
@@ -38,12 +39,12 @@ const [current, setCurrent] = useState(0);
   }, []);
 
   return (
-     <div className="relative w-full max-w-6xl mx-auto">
+    <div className="relative w-full max-w-6xl mx-auto">
       {/* Slides */}
       <div className="overflow-hidden rounded-3xl">
         <div
           className="flex transition-transform duration-700 ease-in-out"
-          style={{ transform: `translateX(-${current * 100}%)` }}
+          style={{ transform: 'translateX(-${current * 100}%)' }}
         >
           {slides.map((slide) => (
             <div key={slide.id} className="min-w-full relative">
@@ -97,16 +98,16 @@ const [current, setCurrent] = useState(0);
           <button
             key={i}
             onClick={() => setCurrent(i)}
-            className={`h-3 w-3 rounded-full transition-all ${
+            className={'h-3 w-3 rounded-full transition-all ${
               current === i
                 ? "bg-white scale-125"
                 : "bg-white/50"
-            }`}
+            }'}
           />
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Carousel2Privew
+`;
