@@ -62,20 +62,23 @@ Open 👉 http://localhost:3000
 
 
  🧪 Available Components
-
+✔  Install
 ✅ Clipboard
-
 ✅ Buttons
 
-⏳ Forms (Coming Soon)
+⏳ Gradient
 
 ⏳ Cards
+
+⏳ Forms
+
+⏳ Carousel
 
 ⏳ Modals
 
 ⏳ Navbar
 
-⏳ Gradient
+
 
 More components will be added regularly 🚧
 
