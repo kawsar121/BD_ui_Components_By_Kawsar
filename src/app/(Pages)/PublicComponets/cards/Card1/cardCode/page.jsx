@@ -4,7 +4,7 @@ import { card1Value } from './card1Value'
 
 function CardCode() {
   return (
-    <div><h1>CardCode</h1>
+    <div className=' h-96 overflow-y-scroll'><h1>CardCode</h1>
       <ClipboardFunconality text={card1Value}></ClipboardFunconality>
     </div>
     

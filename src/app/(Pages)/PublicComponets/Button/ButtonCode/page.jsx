@@ -4,7 +4,7 @@ import { Buttonvalue } from './buttonValue'
 
 function ButtonCode() {
   return (
-    <div>
+    <div className=' h-96 overflow-y-scroll'>
         <ClipboardFunconality text={Buttonvalue}></ClipboardFunconality>
     </div>
   )

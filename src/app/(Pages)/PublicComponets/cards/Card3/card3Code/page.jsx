@@ -4,7 +4,7 @@ import { Card3Value } from './card3value'
 
 function Card3CodePage() {
   return (
-    <div>Card3CodePage
+    <div className=' h-96 overflow-y-scroll'>
       <ClipboardFunconality text={Card3Value}></ClipboardFunconality>
     </div>
   )

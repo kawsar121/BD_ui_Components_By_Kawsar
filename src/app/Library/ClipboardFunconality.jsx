@@ -16,9 +16,9 @@ export default function ClipboardFunconality({ text }) {
 
   return (
     <div className="bg-gray-900 text-gray-100 p-6 rounded-lg border max-w-2xl relative">
-
+      {/* h-96 overflow-y-scroll */}
       {/* Code Block */}
-      <pre className="text-sm font-mono whitespace-pre overflow-x-auto">
+      <pre className="text-sm font-mono whitespace-pre overflow-x-auto ">
         <code>{text}</code>
       </pre>
 

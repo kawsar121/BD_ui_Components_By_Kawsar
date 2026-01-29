@@ -3,7 +3,7 @@ import Card3Privew from './card3Privew/page'
 
 function Card3MainPage() {
   return (
-    <div>
+    <div className=' h-96 overflow-y-scroll'>
         <Card3Privew></Card3Privew>
     </div>
   )

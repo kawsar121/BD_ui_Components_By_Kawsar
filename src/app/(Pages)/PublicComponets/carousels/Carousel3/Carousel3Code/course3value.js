@@ -1,4 +1,4 @@
-export const Course3value = `
+export const Carousel3value = `
 "use client";
 
 import { useState } from "react";

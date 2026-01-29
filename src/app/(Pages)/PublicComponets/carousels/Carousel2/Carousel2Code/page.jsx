@@ -4,7 +4,7 @@ import { Carousel2Value } from './carousel2Value'
 
 function Carousel2Code() {
   return (
-    <div>
+    <div className=' h-96 overflow-y-scroll'>
       <ClipboardFunconality text={Carousel2Value}></ClipboardFunconality>
     </div>
   )
