@@ -44,7 +44,7 @@ export default function Carousel() {
       {/* Slides */}
       <div
         className="flex transition-transform duration-700 ease-in-out"
-        style={{ transform: 'translateX(-${current * 100}%)' }}
+        style={{ transform: \`translateX(-\\\${current * 100}%)\` }}
       >
         {slides.map((slide) => (
           <div key={slide.id} className="min-w-full relative">
@@ -82,9 +82,7 @@ export default function Carousel() {
       </button>
 
       <button
-        onClick={() =>
-          setCurrent((current + 1) % slides.length)
-        }
+        onClick={() => setCurrent((current + 1) % slides.length)}
         className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-3 rounded-full shadow"
       >
         ❯
@@ -96,16 +94,15 @@ export default function Carousel() {
           <button
             key={i}
             onClick={() => setCurrent(i)}
-            className={'h-3 w-3 rounded-full transition ${
+            className={\`h-3 w-3 rounded-full transition \\\${
               current === i
                 ? "bg-white scale-110"
                 : "bg-white/50"
-            }'}
+            }\`}
           />
         ))}
       </div>
     </div>
   );
 }
-
 `;

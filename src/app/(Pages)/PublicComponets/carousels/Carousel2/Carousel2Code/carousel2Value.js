@@ -44,7 +44,7 @@ export default function GlassCarousel() {
       <div className="overflow-hidden rounded-3xl">
         <div
           className="flex transition-transform duration-700 ease-in-out"
-          style={{ transform: 'translateX(-${current * 100}%)' }}
+          style={{ transform: \`translateX(-\\\${current * 100}%)\` }}
         >
           {slides.map((slide) => (
             <div key={slide.id} className="min-w-full relative">
@@ -98,16 +98,15 @@ export default function GlassCarousel() {
           <button
             key={i}
             onClick={() => setCurrent(i)}
-            className={'h-3 w-3 rounded-full transition-all ${
+            className={\`h-3 w-3 rounded-full transition-all \\\${
               current === i
                 ? "bg-white scale-125"
                 : "bg-white/50"
-            }'}
+            }\`}
           />
         ))}
       </div>
     </div>
   );
 }
-
 `;

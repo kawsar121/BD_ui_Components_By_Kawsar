@@ -1,3 +1,4 @@
+export const Course3value = `
 "use client";
 
 import { useState } from "react";
@@ -33,8 +34,8 @@ const cards = [
   },
 ];
 
-function Carousel3Peivew() {
-const [index, setIndex] = useState(0);
+function Carousel3Preview() {
+  const [index, setIndex] = useState(0);
 
   const prev = () => {
     setIndex((prev) => (prev === 0 ? cards.length - 1 : prev - 1));
@@ -45,17 +46,17 @@ const [index, setIndex] = useState(0);
   };
 
   return (
-     <div className="relative max-w-6xl mx-auto py-16">
+    <div className="relative max-w-6xl mx-auto py-16">
       {/* Cards */}
       <div className="overflow-hidden">
         <div
           className="flex gap-6 transition-transform duration-700 ease-in-out"
-          style={{ transform: `translateX(-${index * 320}px)` }}
+          style={{ transform: \`translateX(-\\\${index * 320}px)\` }}
         >
           {cards.map((card) => (
             <div
               key={card.id}
-              className="min-w-25 rounded-3xl overflow-hidden bg-white/20 backdrop-blur-xl border border-white/30 shadow-xl"
+              className="min-w-[300px] rounded-3xl overflow-hidden bg-white/20 backdrop-blur-xl border border-white/30 shadow-xl"
             >
               <img
                 src={card.image}
@@ -63,11 +64,11 @@ const [index, setIndex] = useState(0);
                 className="h-44 w-full object-cover"
               />
 
-              <div className="p-6 text-white">
-                <h3 className="text-lg text-black font-semibold mb-2">
+              <div className="p-6">
+                <h3 className="text-lg font-semibold mb-2 text-black">
                   {card.title}
                 </h3>
-                <p className=" text-gray-700 text-sm">
+                <p className="text-gray-700 text-sm">
                   {card.desc}
                 </p>
               </div>
@@ -91,7 +92,8 @@ const [index, setIndex] = useState(0);
         ❯
       </button>
     </div>
-  )
+  );
 }
 
-export default Carousel3Peivew
+export default Carousel3Preview;
+`;
