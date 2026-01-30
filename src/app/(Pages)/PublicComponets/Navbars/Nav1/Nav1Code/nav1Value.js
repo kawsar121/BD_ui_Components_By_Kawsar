@@ -1,12 +1,14 @@
-'use client'
+export const Nav1value = `
+"use client"; // If your project next.js, so you can use this 
+
 import { useState } from "react";
-function Nav1Privew() {
+
+export default function TransparentNavbar() {
   const [open, setOpen] = useState(false);
 
   return (
-     <div className="">
-        <nav className="bg-red-500 flex mx-auto">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex gap-52 items-center justify-between">
+    <nav className="fixed top-0 left-0 w-full z-50">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <h1 className="text-2xl font-bold text-white">Brand</h1>
 
@@ -37,8 +39,7 @@ function Nav1Privew() {
         </div>
       )}
     </nav>
-     </div>
-  )
+  );
 }
 
-export default Nav1Privew
+`;
