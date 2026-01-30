@@ -5,7 +5,7 @@ import { useState } from "react";
 function Nav2Privew() {
     const [open, setOpen] = useState(false);
   return (
-      <nav className="sticky top-0 z-50 backdrop-blur-xl bg-blue-500 border-b border-white/30">
+      <nav className="sticky top-0 z-50 backdrop-blur-xl bg-blue-500 border-b border-white/30 rounded-xl">
       <div className="max-w-7xl mx-auto px-6 py-4 flex gap-20 justify-between items-center">
         <h1 className="text-2xl font-bold text-white">Brand</h1>
 
