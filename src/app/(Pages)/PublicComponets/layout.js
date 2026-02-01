@@ -8,8 +8,8 @@ export default function ComponentsList({ children }) {
   return (
     <div className="flex bg-gray-100 gap-44 min-h-screen pt-14">
       {/* Left Menu */}
-      <aside className="bg-gray-200 p-4 overflow-y-auto w-72 hidden lg:block">
-        <h2 className="text-xl font-bold mb-4">Products</h2>
+      <aside className="bg-gray-200 p-4 w-72 hidden lg:block h-225 overflow-y-scroll">
+        <h2 className="text-xl font-bold mb-4 mt-5">All Components</h2>
 
         <ul className="space-y-5">
           <li>
