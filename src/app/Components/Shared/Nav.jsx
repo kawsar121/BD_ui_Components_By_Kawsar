@@ -5,11 +5,12 @@ function Nav() {
   const links = <>
         <li><Link href="/">Home</Link></li>
         <li><Link href="/PublicComponets">Components</Link></li>
+        <li><Link href="/questions">Interview Question</Link></li>
         <li><Link href="/about">About</Link></li>
         
   </>
   return (
-    <div className="navbar bg-linear-to-bl from-violet-400 to-fuchsia-400 shadow-sm fixed top-0 left-0 w-full z-50">
+    <div className="navbar bg-linear-to-bl from-violet-500 to-fuchsia-500 shadow-sm fixed top-0 left-0 w-full z-50">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,7 +25,7 @@ function Nav() {
     <a className="btn btn-ghost text-xl">BD_UI</a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1 flex gap-20">
+    <ul className="menu menu-horizontal px-1 flex gap-20 text-white">
       {links}
     </ul>
   </div>
