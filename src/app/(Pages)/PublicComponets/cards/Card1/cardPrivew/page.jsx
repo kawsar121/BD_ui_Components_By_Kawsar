@@ -7,7 +7,7 @@ function CardPrivew() {
       {/* Image */}
       <img
         src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
-        alt="Product"
+        alt="watch photo"
         className="h-56 w-full object-cover"
       />
 

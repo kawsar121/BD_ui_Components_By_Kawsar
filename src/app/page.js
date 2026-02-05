@@ -35,7 +35,7 @@ export default function Home() {
     () => ({
       background: {
         color: {
-          value: "#ab61ba",
+          value: "#FFFFFF",
         },
       },
       fpsLimit: 120,
@@ -62,10 +62,10 @@ export default function Home() {
       },
       particles: {
         color: {
-          value: "#ffffff",
+          value: "#38BDF8",
         },
         links: {
-          color: "#ffffff",
+          color: "#38BDF8",
           distance: 150,
           enable: true,
           opacity: 0.5,
@@ -122,8 +122,8 @@ export default function Home() {
                 assumenda excepturi exercitationem quasi. In deleniti eaque aut
                 repudiandae et a id nisi.
               </p>
-              <button className="btn btn-primary">
-                <Link href="/PublicComponets">Get Started</Link>
+              <button className="btn btn-primary bg-[#38BDF8]">
+                <Link href="/PublicComponets" className="">Get Started</Link>
               </button>
             </div>
           </div>

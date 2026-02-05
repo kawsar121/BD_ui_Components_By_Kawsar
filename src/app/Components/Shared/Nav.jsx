@@ -10,7 +10,7 @@ function Nav() {
         
   </>
   return (
-    <div className="navbar bg-linear-to-bl from-violet-500 to-fuchsia-500 shadow-sm fixed top-0 left-0 w-full z-50">
+    <div className="navbar bg-[#F8FAFC] shadow-sm fixed top-0 left-0 w-full z-50">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,10 +22,10 @@ function Nav() {
         {links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">BD_UI</a>
+    <a className="btn btn-ghost text-xl text-[#38BDF8]">BD_UI</a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1 flex gap-20 text-white">
+    <ul className="menu menu-horizontal px-1 flex gap-20 text-[#334155] hover:text-[#64748B]">
       {links}
     </ul>
   </div>
