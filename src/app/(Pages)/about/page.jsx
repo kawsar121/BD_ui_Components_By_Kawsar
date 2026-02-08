@@ -1,11 +1,11 @@
 import React from 'react'
 
-function page() {
+function AboutPage() {
   return (
-    <div>
-      <h1>this is my about page</h1>
+    <div className="mt-24 text-center"> 
+      <h1 className="text-black text-3xl font-bold">this is my about Page</h1>
     </div>
   )
 }
 
-export default page
+export default AboutPage
