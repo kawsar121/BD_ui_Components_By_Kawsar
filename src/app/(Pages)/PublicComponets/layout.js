@@ -9,13 +9,13 @@ export default function ComponentsList({ children }) {
     <div className="flex bg-gray-100 gap-44 min-h-screen pt-14">
       {/* Left Menu */}
       <aside className="bg-gray-200 p-4 w-72 hidden lg:block h-225 overflow-y-scroll">
-        <h2 className="text-xl font-bold mb-4 mt-5">All Components</h2>
+        <h2 className="text-xl font-bold mb-4 mt-5 dark:text-black">All Components</h2>
 
         <ul className="space-y-5">
           <li>
             <Link
               href="/PublicComponets/install"
-              className="block p-2 bg-white rounded hover:bg-red-500 hover:text-white"
+              className="block dark:text-black p-2 bg-white rounded hover:bg-red-500 hover:text-white"
             >
               Install
             </Link>
@@ -24,7 +24,7 @@ export default function ComponentsList({ children }) {
           <li>
             <Link
               href="/PublicComponets/clipbord"
-              className="block p-2 bg-white rounded hover:bg-red-500 hover:text-white"
+              className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
             >
               Clipbord
             </Link>
@@ -33,7 +33,7 @@ export default function ComponentsList({ children }) {
           <li>
             <Link
               href="/PublicComponets/gradient"
-              className="block p-2 bg-white rounded hover:bg-red-500 hover:text-white"
+              className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
             >
               Gradient
             </Link>
@@ -42,7 +42,7 @@ export default function ComponentsList({ children }) {
           <li>
             <Link
               href="/PublicComponets/Button"
-              className="block p-2 bg-white rounded hover:bg-red-500 hover:text-white"
+              className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
             >
               Button
             </Link>
@@ -61,7 +61,7 @@ export default function ComponentsList({ children }) {
           <li>
             <button
               onClick={() => setButtonOpen(!buttonOpen)}
-              className="w-full text-left block p-2 bg-white rounded hover:bg-red-500 hover:text-white flex justify-between items-center"
+              className="w-full dark:text-black text-left block p-2 bg-white rounded hover:bg-red-500 hover:text-white flex justify-between items-center"
             >
               Cards
               <span
@@ -78,7 +78,7 @@ export default function ComponentsList({ children }) {
                 <li>
                   <Link
                     href="/PublicComponets/cards/Card1"
-                    className="block p-2 bg-gray-100 rounded hover:bg-red-400 hover:text-white"
+                    className="block dark:text-black p-2 bg-gray-100 rounded hover:bg-red-400 hover:text-white"
                   >
                     Card 1
                   </Link>
@@ -87,7 +87,7 @@ export default function ComponentsList({ children }) {
                 <li>
                   <Link
                     href="/PublicComponets/cards/Card2"
-                    className="block p-2 bg-gray-100 rounded hover:bg-red-400 hover:text-white"
+                    className="block dark:text-black p-2 bg-gray-100 rounded hover:bg-red-400 hover:text-white"
                   >
                     Card 2
                   </Link>
@@ -96,7 +96,7 @@ export default function ComponentsList({ children }) {
                 <li>
                   <Link
                     href="/PublicComponets/cards/Card3"
-                    className="block p-2 bg-gray-100 rounded hover:bg-red-400 hover:text-white"
+                    className="block dark:text-black p-2 bg-gray-100 rounded hover:bg-red-400 hover:text-white"
                   >
                     Card 3
                   </Link>
@@ -109,7 +109,7 @@ export default function ComponentsList({ children }) {
           <li>
             <button
               onClick={() => setCarouselOpen(!carouselOpen)}
-              className="w-full text-left block p-2 bg-white rounded hover:bg-red-500 hover:text-white flex justify-between items-center"
+              className="w-full dark:text-black text-left block p-2 bg-white rounded hover:bg-red-500 hover:text-white flex justify-between items-center"
             >
               Carousel
               <span
@@ -126,7 +126,7 @@ export default function ComponentsList({ children }) {
                 <li>
                   <Link
                     href="/PublicComponets/carousels/Carousel1"
-                    className="block p-2 bg-gray-100 rounded hover:bg-red-400 hover:text-white"
+                    className="block p-2 dark:text-black bg-gray-100 rounded hover:bg-red-400 hover:text-white"
                   >
                     Carousel 1
                   </Link>
@@ -135,7 +135,7 @@ export default function ComponentsList({ children }) {
                 <li>
                   <Link
                     href="/PublicComponets/carousels/Carousel2"
-                    className="block p-2 bg-gray-100 rounded hover:bg-red-400 hover:text-white"
+                    className="block p-2 dark:text-black bg-gray-100 rounded hover:bg-red-400 hover:text-white"
                   >
                     Carousel 2
                   </Link>
@@ -144,7 +144,7 @@ export default function ComponentsList({ children }) {
                 <li>
                   <Link
                     href="/PublicComponets/carousels/Carousel3"
-                    className="block p-2 bg-gray-100 rounded hover:bg-red-400 hover:text-white"
+                    className="block p-2 dark:text-black bg-gray-100 rounded hover:bg-red-400 hover:text-white"
                   >
                     Carousel 3
                   </Link>
@@ -157,7 +157,7 @@ export default function ComponentsList({ children }) {
           <li>
             <button
               onClick={() => setNavOpen(!navOpen)}
-              className="w-full text-left block p-2 bg-white rounded hover:bg-red-500 hover:text-white flex justify-between items-center"
+              className="w-full dark:text-black text-left block p-2 bg-white rounded hover:bg-red-500 hover:text-white flex justify-between items-center"
             >
               Nav
               <span
@@ -174,7 +174,7 @@ export default function ComponentsList({ children }) {
                 <li>
                   <Link
                     href="/PublicComponets/Navbars/Nav1"
-                    className="block p-2 bg-gray-100 rounded hover:bg-red-400 hover:text-white"
+                    className="block p-2 dark:text-black bg-gray-100 rounded hover:bg-red-400 hover:text-white"
                   >
                     Nav 1
                   </Link>
@@ -183,7 +183,7 @@ export default function ComponentsList({ children }) {
                 <li>
                   <Link
                     href="/PublicComponets/Navbars/Nav2"
-                    className="block p-2 bg-gray-100 rounded hover:bg-red-400 hover:text-white"
+                    className="block p-2 dark:text-black bg-gray-100 rounded hover:bg-red-400 hover:text-white"
                   >
                     Nav 2
                   </Link>
@@ -192,7 +192,7 @@ export default function ComponentsList({ children }) {
                 <li>
                   <Link
                     href="/PublicComponets/Navbars/Nav3"
-                    className="block p-2 bg-gray-100 rounded hover:bg-red-400 hover:text-white"
+                    className="block p-2 dark:text-black bg-gray-100 rounded hover:bg-red-400 hover:text-white"
                   >
                     Nav 3
                   </Link>
