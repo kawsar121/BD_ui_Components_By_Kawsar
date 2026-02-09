@@ -1,8 +1,12 @@
 import React from 'react'
+import CmsFaq from './CmsFaq'
 
 function CmsMain() {
   return (
-    <div>CmsMain</div>
+    <div>
+      <h1>Cms Questions</h1>
+      <CmsFaq></CmsFaq>
+    </div>
   )
 }
 

@@ -1,12 +1,12 @@
 import React from 'react'
-import FAQ from './FAQ'
+import ForntEndFAQ from './FrontEndFAQ'
 
 function ForntEndMain() {
   return (
     <div className=''>
-      <h1>ForntEndMain</h1>
+      <h1 className='text-center text-lg md:text-4xl font-bold'>ForntEnd Interview Question</h1>
       <div className=''>
-        <FAQ></FAQ>
+        <ForntEndFAQ></ForntEndFAQ>
       </div>
     </div>
   )
