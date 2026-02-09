@@ -1,32 +1,34 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { translateToBangla } from "./translate";
 
 export default function AccordionItem({ question, answer, lang }) {
   const [open, setOpen] = useState(false);
+  const [bnQ, setBnQ] = useState("");
+  const [bnA, setBnA] = useState("");
 
-  const qText = lang === "en" ? question : translateToBangla(question);
-  const aText = lang === "en" ? answer : translateToBangla(answer);
+  useEffect(() => {
+    if (lang === "bn") {
+      translateToBangla(question).then(setBnQ);
+      translateToBangla(answer).then(setBnA);
+    }
+  }, [lang, question, answer]);
 
   return (
-    <div className="border rounded-lg shadow-sm mb-4">
+    <div className="border rounded-lg mb-4">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex justify-between items-center p-4 text-left font-medium hover:bg-gray-100"
+        className="w-full p-4 flex justify-between text-left"
       >
-        {qText}
-        <span className={`transition ${open ? "rotate-180" : ""}`}>
-          ▼
-        </span>
+        {lang === "en" ? question : bnQ || "লোড হচ্ছে..."}
+        <span>▼</span>
       </button>
 
-      <div
-        className={`overflow-hidden transition-all duration-300 ${
-          open ? "max-h-40 p-4" : "max-h-0 px-4"
-        }`}
-      >
-        <p className="text-gray-600">{aText}</p>
-      </div>
+      {open && (
+        <p className="p-4 text-gray-600">
+          {lang === "en" ? answer : bnA || "লোড হচ্ছে..."}
+        </p>
+      )}
     </div>
   );
 }

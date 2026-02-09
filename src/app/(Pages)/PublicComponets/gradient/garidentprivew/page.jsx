@@ -2,7 +2,7 @@ import React from 'react'
 
 function Garidentprivew() {
   return (
-    <div className="w-xl rounded-lg border mt-5">
+    <div className="w-80 md:w-xl rounded-lg border mt-5">
   <div className="whitespace-pre overflow-x-auto p-5 space-y-5">
 
     <div className="h-14 bg-linear-to-r from-cyan-500 to-blue-500 rounded"></div>

@@ -116,8 +116,8 @@ export default function Home() {
         <div className="hero bg-base-200 min-h-screen">
           <div className="hero-content text-center">
             <div className="max-w-md">
-              <h1 className="text-5xl font-bold dark:text-sky-400">BD Components UI</h1>
-              <p className="py-6 dark:text-black">
+              <h1 className="text-3xl md:text-5xl font-bold dark:text-sky-400">BD Components UI</h1>
+              <p className="py-6 dark:text-black text-base md:text-lg">
                 Provident cupiditate voluptatem et in. Quaerat fugiat ut
                 assumenda excepturi exercitationem quasi. In deleniti eaque aut
                 repudiandae et a id nisi.
