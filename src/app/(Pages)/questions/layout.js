@@ -118,7 +118,7 @@ export default function QuestionLayouts({ children }) {
       </div>
 
       {/* Center Content */}
-      <main className="flex-1 w-full ">
+      <main className="flex-1 w-full">
         <div className="max-w-4xl p-4 sm:p-6 lg:p-20">{children}</div>
       </main>
     </div>

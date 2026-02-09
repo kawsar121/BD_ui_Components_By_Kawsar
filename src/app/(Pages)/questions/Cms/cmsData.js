@@ -16,6 +16,31 @@ const CmsData = [
   },
   {
     id: 4,
+    question: "Cms good for beginners?",
+    answer: "Yes, React is beginner-friendly and has a large community."
+  },
+  {
+    id: 5,
+    question: "Cms good for beginners?",
+    answer: "Yes, React is beginner-friendly and has a large community."
+  },
+  {
+    id: 6,
+    question: "Cms good for beginners?",
+    answer: "Yes, React is beginner-friendly and has a large community."
+  },
+  {
+    id: 7,
+    question: "Cms good for beginners?",
+    answer: "Yes, React is beginner-friendly and has a large community."
+  },
+  {
+    id: 8,
+    question: "Cms good for beginners?",
+    answer: "Yes, React is beginner-friendly and has a large community."
+  },
+  {
+    id: 9,
     question: "Can I use Cms with  CSS?",
     answer: "Yes, React works perfectly with Tailwind CSS."
   }
