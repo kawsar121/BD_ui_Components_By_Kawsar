@@ -18,7 +18,7 @@ function CardPrivew() {
         </h2>
 
         <p className="text-gray-500 text-sm mt-2">
-          Elegant design with premium materials. Perfect for modern lifestyle.
+          Elegants design with premium materials. Perfect for modern lifestyle.
         </p>
 
         {/* Price + Button */}
