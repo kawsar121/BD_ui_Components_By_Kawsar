@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-
+import Image from 'next/image'
 const slides = [
   {
     id: 1,
@@ -47,7 +47,13 @@ const [current, setCurrent] = useState(0);
         >
           {slides.map((slide) => (
             <div key={slide.id} className="min-w-full relative">
-              <img
+              {/* <img
+                src={slide.image}
+                alt={slide.title}
+                className="w-full h-112.5 object-cover"
+              /> */}
+
+              <Image
                 src={slide.image}
                 alt={slide.title}
                 className="w-full h-112.5 object-cover"

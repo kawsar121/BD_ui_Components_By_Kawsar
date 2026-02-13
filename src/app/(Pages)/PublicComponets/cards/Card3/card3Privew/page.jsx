@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 function Card3Privew() {
   return (
     <div className="relative flex items-center justify-center bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 p-6">
@@ -10,7 +10,13 @@ function Card3Privew() {
         shadow-xl p-6 sm:p-8 text-white">
 
         {/* Image */}
-        <img
+        {/* <img
+          src="https://images.unsplash.com/photo-1520975916090-3105956dac38"
+          alt="Fashion"
+          className="w-full h-48 sm:h-72 object-cover rounded-xl mb-5"
+        /> */}
+
+        <Image
           src="https://images.unsplash.com/photo-1520975916090-3105956dac38"
           alt="Fashion"
           className="w-full h-48 sm:h-72 object-cover rounded-xl mb-5"
