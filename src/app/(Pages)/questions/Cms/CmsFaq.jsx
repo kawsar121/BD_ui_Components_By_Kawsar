@@ -1,13 +1,13 @@
 "use client";
 import { useState } from "react";
-import faqData from "./data";
-import AccordionItem from "./AccordionItem";
+import cmsData from "./cmsData";
+import AccordionItem from "../../../Components/QuestionAndAnswerTopics/AccordionItem";
 
-export default function FAQ() {
+export default function CmsFaq() {
   const [lang, setLang] = useState("en");
 
   return (
-    <div className="max-w-2xl mx-auto mt-10">
+    <div className="max-w-2xl mx-auto bg-red-400">
       {/* Language Switch */}
       <div className="flex justify-end mb-4">
         <button
@@ -19,7 +19,7 @@ export default function FAQ() {
       </div>
 
       {/* FAQ List */}
-      {faqData.map((item) => (
+      {cmsData.map((item) => (
         <AccordionItem
           key={item.id}
           question={item.question}

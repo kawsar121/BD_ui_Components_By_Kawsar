@@ -8,7 +8,7 @@ function layout({children}) {
             <button className='btn btn-outline btn-secondary'><Link href="/PublicComponets/clipbord/clipprivew">Privew</Link></button>
             <button className='btn btn-outline btn-secondary '><Link href="/PublicComponets/clipbord/clipCode">Code</Link></button>
         </div>
-      <div>
+      <div className=''>
         {children}
       </div>
     </div>
