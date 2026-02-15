@@ -1,29 +1,25 @@
-
 "use client";
 
 import { useState, useEffect } from "react";
-
+import Image from 'next/image'
 const slides = [
   {
     id: 1,
     title: "Modern Design",
     desc: "Clean and minimal UI with Tailwind CSS",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
   },
   {
     id: 2,
     title: "Responsive Layout",
     desc: "Perfect on mobile, tablet and desktop",
-    image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
   },
   {
     id: 3,
     title: "Production Ready",
     desc: "Optimized and scalable carousel component",
-    image:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
   },
 ];
 function Carousel1Privew() {
@@ -47,7 +43,12 @@ function Carousel1Privew() {
       >
         {slides.map((slide) => (
           <div key={slide.id} className="min-w-full relative">
-            <img
+            {/* <img
+              src={slide.image}
+              alt={slide.title}
+              className="w-full h-[420px] object-cover"
+            /> */}
+            <Image
               src={slide.image}
               alt={slide.title}
               className="w-full h-[420px] object-cover"
@@ -59,9 +60,7 @@ function Carousel1Privew() {
                 <h2 className="text-3xl md:text-4xl font-bold mb-3">
                   {slide.title}
                 </h2>
-                <p className="text-gray-200 text-lg">
-                  {slide.desc}
-                </p>
+                <p className="text-gray-200 text-lg">{slide.desc}</p>
               </div>
             </div>
           </div>
@@ -71,9 +70,7 @@ function Carousel1Privew() {
       {/* Arrows */}
       <button
         onClick={() =>
-          setCurrent(
-            current === 0 ? slides.length - 1 : current - 1
-          )
+          setCurrent(current === 0 ? slides.length - 1 : current - 1)
         }
         className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-3 rounded-full shadow"
       >
@@ -81,9 +78,7 @@ function Carousel1Privew() {
       </button>
 
       <button
-        onClick={() =>
-          setCurrent((current + 1) % slides.length)
-        }
+        onClick={() => setCurrent((current + 1) % slides.length)}
         className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-3 rounded-full shadow"
       >
         ❯
@@ -96,15 +91,13 @@ function Carousel1Privew() {
             key={i}
             onClick={() => setCurrent(i)}
             className={`h-3 w-3 rounded-full transition ${
-              current === i
-                ? "bg-white scale-110"
-                : "bg-white/50"
+              current === i ? "bg-white scale-110" : "bg-white/50"
             }`}
           />
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Carousel1Privew
+export default Carousel1Privew;

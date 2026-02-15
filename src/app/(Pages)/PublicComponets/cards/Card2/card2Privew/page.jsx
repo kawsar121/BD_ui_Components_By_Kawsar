@@ -1,12 +1,13 @@
 import React from 'react'
-
+import Image from 'next/image'
 function CardPrivew() {
   return (
      <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto">
       <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden">
         
         {/* Image */}
-        <img
+
+        <Image
           src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
           alt="Fashion Product"
           className="w-full h-52 sm:h-60 lg:h-72 object-cover"

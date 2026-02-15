@@ -1,16 +1,15 @@
 import React from 'react'
-
+import Image from 'next/image'
 function CardPrivew() {
   return (
     <div className="max-w-sm rounded-2xl bg-white shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
       
       {/* Image */}
-      <img
+      <Image
         src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
         alt="watch photo"
         className="h-56 w-full object-cover"
       />
-
       {/* Content */}
       <div className="p-5">
         <h2 className="text-xl font-semibold text-gray-800">
@@ -18,7 +17,7 @@ function CardPrivew() {
         </h2>
 
         <p className="text-gray-500 text-sm mt-2">
-          Elegant design with premium materials. Perfect for modern lifestyle.
+          Elegants designs with premium materials. Perfect for modern lifestyle.
         </p>
 
         {/* Price + Button */}
