@@ -1,16 +1,16 @@
 "use client";
 import { useEffect, useState } from "react";
-import { translateToBangla } from "./translate";
+import { translateToEnglish } from "./translate";
 
 export default function AccordionItem({ question, answer, lang }) {
   const [open, setOpen] = useState(false);
-  const [bnQ, setBnQ] = useState("");
-  const [bnA, setBnA] = useState("");
+  const [enQ, setEnQ] = useState("");
+  const [enA, setEnA] = useState("");
 
   useEffect(() => {
-    if (lang === "bn") {
-      translateToBangla(question).then(setBnQ);
-      translateToBangla(answer).then(setBnA);
+    if (lang === "en") {
+      translateToEnglish(question).then(setEnQ);
+      translateToEnglish(answer).then(setEnA);
     }
   }, [lang, question, answer]);
 
@@ -20,13 +20,13 @@ export default function AccordionItem({ question, answer, lang }) {
         onClick={() => setOpen(!open)}
         className="w-full p-4 flex justify-between text-left"
       >
-        {lang === "en" ? question : bnQ || "লোড হচ্ছে..."}
+        {lang === "bn" ? question : enQ || "Loading..."}
         <span>▼</span>
       </button>
 
       {open && (
         <p className="p-4 text-gray-600">
-          {lang === "en" ? answer : bnA || "লোড হচ্ছে..."}
+          {lang === "bn" ? answer : enA || "Loading..."}
         </p>
       )}
     </div>
