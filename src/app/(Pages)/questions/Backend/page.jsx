@@ -1,8 +1,11 @@
 import React from 'react'
+import BackEndFAQ from './BackendFaq'
 
 function BackendMain() {
   return (
-    <div>BackendMain</div>
+    <div>
+      <BackEndFAQ></BackEndFAQ>
+    </div>
   )
 }
 

@@ -6,47 +6,49 @@ export default function QuestionLayouts({ children }) {
   const [carousel2Open, setCarousel2Open] = useState(false);
   const [nav2Open, setNav2Open] = useState(false);
   return (
-    <div className="flex bg-gray-100 gap-0 md:gap-48 min-h-screen pt-14">
+    <div className="relative bg-gray-100 min-h-screen pt-14">
       {/* Left Menu */}
-      <aside className="bg-gray-200 p-4 w-72 hidden lg:block h-225 overflow-y-scroll ">
-        <h2 className="text-xl font-bold mb-4 mt-5 dark:text-black">All Question</h2>
+      <aside className="bg-gray-200 p-4 hidden lg:block absolute left-0 top-14 w-72 h-225 overflow-y-scroll ">
+        <h2 className="text-xl font-bold mb-4 mt-5 dark:text-black">
+          All Question
+        </h2>
 
         <ul className="space-y-5">
           <li>
-             <Link
-            className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
-            href="/questions/Cms"
-          >
-            Cms
-          </Link>
+            <Link
+              className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
+              href="/questions/Cms"
+            >
+              Cms
+            </Link>
           </li>
 
           <li>
             <Link
-            className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
-            href="/questions/FrontEnd"
-          >
-            FrontEnd
-          </Link>
+              className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
+              href="/questions/FrontEnd"
+            >
+              FrontEnd
+            </Link>
           </li>
 
           <li>
             <Link
-            className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
-            href="/questions/Backend"
-          >
-            Backend
-          </Link>
+              className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
+              href="/questions/Backend"
+            >
+              Backend
+            </Link>
           </li>
 
           <li>
             <Link
-            className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
-            href="/questions/DjangoDeveloper"
-          >
-            DJango
-          </Link>  
-          </li>       
+              className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
+              href="/questions/DjangoDeveloper"
+            >
+              DJango
+            </Link>
+          </li>
         </ul>
       </aside>
 
@@ -79,49 +81,51 @@ export default function QuestionLayouts({ children }) {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-56 p-2 shadow space-y-1"
           >
             <li>
-             <Link
-            className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
-            href="/questions/Cms"
-          >
-            Cms
-          </Link>
-          </li>
+              <Link
+                className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
+                href="/questions/Cms"
+              >
+                Cms
+              </Link>
+            </li>
 
-          <li>
-            <Link
-            className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
-            href="/questions/FrontEnd"
-          >
-            FrontEnd
-          </Link>
-          </li>
+            <li>
+              <Link
+                className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
+                href="/questions/FrontEnd"
+              >
+                FrontEnd
+              </Link>
+            </li>
 
-          <li>
-            <Link
-            className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
-            href="/questions/Backend"
-          >
-            Backend
-          </Link>
-          </li>
+            <li>
+              <Link
+                className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
+                href="/questions/Backend"
+              >
+                Backend
+              </Link>
+            </li>
 
-          <li>
-            <Link
-            className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
-            href="/questions/DjangoDeveloper"
-          >
-            DJango
-          </Link>  
-          </li>  
+            <li>
+              <Link
+                className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
+                href="/questions/DjangoDeveloper"
+              >
+                DJango
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
 
       {/* Center Content */}
-      <main className="flex-1 w-full">
-        <div className="max-w-4xl p-4 sm:p-6 lg:p-20">{children}</div>
+
+      <main className="flex justify-center">
+        <div className="w-full max-w-4xl p-4 sm:p-6 lg:p-20 mt-10 md:mt-0">
+          {children}
+        </div>
       </main>
     </div>
   );
 }
-
