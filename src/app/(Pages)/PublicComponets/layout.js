@@ -6,9 +6,9 @@ export default function ComponentsList({ children }) {
   const [carouselOpen, setCarouselOpen] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
   return (
-    <div className="flex bg-gray-100 gap-0 md:gap-48 min-h-screen pt-14">
+    <div className="relative bg-gray-100 min-h-screen pt-14">
       {/* Left Menu */}
-      <aside className="bg-gray-200 p-4 w-72 hidden lg:block h-225 overflow-y-scroll">
+      <aside className="bg-gray-200 p-4 hidden lg:block absolute left-0 top-14 w-72 h-225 overflow-y-scroll">
         <h2 className="text-xl font-bold mb-4 mt-5 dark:text-black">All Components</h2>
 
         <ul className="space-y-5">
@@ -316,9 +316,10 @@ export default function ComponentsList({ children }) {
       </div>
 
       {/* Center Content */}
-      <main className="flex-1 mt-14 md:mt-0 w-full">
-        <div className="max-w-4xl p-4 sm:p-6 lg:p-20">{children}</div>
+      <main className="flex justify-center">
+        <div className="w-full max-w-4xl p-4 sm:p-6 lg:p-20 mt-10 md:mt-0">{children}</div>
       </main>
     </div>
+
   );
 }
