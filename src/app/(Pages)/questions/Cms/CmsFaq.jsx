@@ -7,7 +7,7 @@ export default function CmsFaq() {
   const [lang, setLang] = useState("en");
 
   return (
-    <div className="max-w-2xl mx-auto bg-red-400">
+    <div className="max-w-5xl mx-auto bg-red-400">
       {/* Language Switch */}
       <div className="flex justify-end mb-4">
         <button

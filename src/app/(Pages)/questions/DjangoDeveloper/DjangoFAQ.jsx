@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import faqData from "./frontenddata";
 import AccordionItem from "../../../Components/QuestionAndAnswerTopics/AccordionItem";
+import DjangoData from "./DjangoData";
 
 export default function DjangoFAQ() {
   const [lang, setLang] = useState("en");
@@ -19,7 +19,7 @@ export default function DjangoFAQ() {
       </div>
 
       {/* FAQ List */}
-      {faqData.map((item) => (
+      {DjangoData.map((item) => (
         <AccordionItem
           key={item.id}
           question={item.question}

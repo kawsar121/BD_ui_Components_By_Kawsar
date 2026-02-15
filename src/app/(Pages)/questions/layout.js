@@ -6,9 +6,9 @@ export default function QuestionLayouts({ children }) {
   const [carousel2Open, setCarousel2Open] = useState(false);
   const [nav2Open, setNav2Open] = useState(false);
   return (
-    <div className="relative bg-gray-100 min-h-screen pt-14">
+    <div className="relative bg-gray-100 min-h-screen ">
       {/* Left Menu */}
-      <aside className="bg-gray-200 p-4 hidden lg:block absolute left-0 top-14 w-72 h-225 overflow-y-scroll ">
+      <aside className="bg-gray-200 pt-14 p-4 hidden lg:block absolute left-0 top-14 w-72 h-225 overflow-y-scroll ">
         <h2 className="text-xl font-bold mb-4 mt-5 dark:text-black">
           All Question
         </h2>
@@ -122,7 +122,7 @@ export default function QuestionLayouts({ children }) {
       {/* Center Content */}
 
       <main className="flex justify-center">
-        <div className="w-full max-w-4xl p-4 sm:p-6 lg:p-20 mt-10 md:mt-0">
+        <div className="w-full max-w-6xl p-4 sm:p-6 lg:p-20 mt-10 md:mt-0">
           {children}
         </div>
       </main>

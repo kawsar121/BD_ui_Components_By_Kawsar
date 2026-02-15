@@ -1,8 +1,11 @@
 import React from 'react'
+import DjangoFAQ from './DjangoFAQ'
 
 function DjangoMain() {
   return (
-    <div>DjangoMain</div>
+    <div>
+      <DjangoFAQ></DjangoFAQ>
+    </div>
   )
 }
 
