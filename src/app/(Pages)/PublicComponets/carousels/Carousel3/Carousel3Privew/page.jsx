@@ -57,15 +57,11 @@ const [index, setIndex] = useState(0);
               key={card.id}
               className="min-w-25 rounded-3xl overflow-hidden bg-white/20 backdrop-blur-xl border border-white/30 shadow-xl"
             >
-              {/* <img
-                src={card.image}
-                alt={card.title}
-                className="h-44 w-full object-cover"
-              /> */}
-
               <Image
                 src={card.image}
                 alt={card.title}
+                width={1200}
+                height={420}
                 className="h-44 w-full object-cover"
               />
 

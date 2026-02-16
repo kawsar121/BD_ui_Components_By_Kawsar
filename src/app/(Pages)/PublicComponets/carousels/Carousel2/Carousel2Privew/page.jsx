@@ -47,15 +47,11 @@ const [current, setCurrent] = useState(0);
         >
           {slides.map((slide) => (
             <div key={slide.id} className="min-w-full relative">
-              {/* <img
-                src={slide.image}
-                alt={slide.title}
-                className="w-full h-112.5 object-cover"
-              /> */}
-
               <Image
                 src={slide.image}
                 alt={slide.title}
+                width={1200}
+                height={420}
                 className="w-full h-112.5 object-cover"
               />
 

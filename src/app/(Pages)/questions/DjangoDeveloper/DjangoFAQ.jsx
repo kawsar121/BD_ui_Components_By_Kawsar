@@ -4,17 +4,17 @@ import AccordionItem from "../../../Components/QuestionAndAnswerTopics/Accordion
 import DjangoData from "./DjangoData";
 
 export default function DjangoFAQ() {
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState("bn"); // Default Bangla
 
   return (
-    <div className="max-w-2xl mx-auto bg-red-400">
+    <div className="max-w-2xl mx-auto bg-red-400 p-6">
       {/* Language Switch */}
       <div className="flex justify-end mb-4">
         <button
-          onClick={() => setLang(lang === "en" ? "bn" : "en")}
-          className="px-4 py-1 rounded bg-blue-500 text-white"
+          onClick={() => setLang(lang === "bn" ? "en" : "bn")}
+          className="px-4 py-2 rounded bg-blue-500 text-white"
         >
-          {lang === "en" ? "বাংলা" : "English"}
+          {lang === "bn" ? "English" : "বাংলা"}
         </button>
       </div>
 
@@ -22,8 +22,8 @@ export default function DjangoFAQ() {
       {DjangoData.map((item) => (
         <AccordionItem
           key={item.id}
-          question={item.question}
-          answer={item.answer}
+          question={item.question} // তুমি নিজে Bangla লিখবে
+          answer={item.answer}     // তুমি নিজে Bangla লিখবে
           lang={lang}
         />
       ))}

@@ -43,17 +43,12 @@ function Carousel1Privew() {
       >
         {slides.map((slide) => (
           <div key={slide.id} className="min-w-full relative">
-            {/* <img
-              src={slide.image}
-              alt={slide.title}
-              className="w-full h-[420px] object-cover"
-            /> */}
             <Image
               src={slide.image}
               alt={slide.title}
-              className="w-full h-[420px] object-cover"
-            />
-
+              width={1200}
+              height={420}
+              className="object-cover"/>
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/50 flex items-center">
               <div className="px-8 max-w-xl text-white">

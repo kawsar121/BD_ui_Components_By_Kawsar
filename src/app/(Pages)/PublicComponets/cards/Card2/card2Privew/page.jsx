@@ -10,6 +10,8 @@ function CardPrivew() {
         <Image
           src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
           alt="Fashion Product"
+          width={500}
+          height={300}
           className="w-full h-52 sm:h-60 lg:h-72 object-cover"
         />
 
