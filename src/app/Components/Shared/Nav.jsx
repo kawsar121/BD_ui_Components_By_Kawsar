@@ -7,6 +7,7 @@ function Nav() {
         <li><Link href="/PublicComponets">Components</Link></li>
         <li><Link href="/questions">Interview Question</Link></li>
         <li><Link href="/about">About</Link></li>
+        <li><a href="https://goldandlandchekeer.netlify.app/">Tools</a></li>
         
   </>
   return (

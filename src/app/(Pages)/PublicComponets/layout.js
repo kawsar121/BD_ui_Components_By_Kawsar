@@ -203,6 +203,15 @@ export default function ComponentsList({ children }) {
 
 
           
+
+          <li>
+            <Link
+              href="/PublicComponets/inputForms"
+              className="block p-2 dark:text-black bg-white rounded hover:bg-red-500 hover:text-white"
+            >
+              Input Form
+            </Link>
+          </li>
         </ul>
       </aside>
 
@@ -310,6 +319,10 @@ export default function ComponentsList({ children }) {
                   </li>
                 </ul>
               </details>
+            </li>
+
+            <li>
+              <Link href="/PublicComponets/inputForms">Input Form</Link>
             </li>
           </ul>
         </div>
