@@ -2,7 +2,9 @@ import React from 'react'
 
 function ToolsMainPage() {
   return (
-    <div>ToolsMainPage</div>
+    <div className=''>
+      <h1>Tools</h1>
+    </div>
   )
 }
 
