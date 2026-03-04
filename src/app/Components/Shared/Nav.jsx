@@ -1,5 +1,7 @@
+"use client";
 import Link from 'next/link'
 import React from 'react'
+import ThemeToggle from '../Themes/ThemeToggle'
 
 function Nav() {
   const links = <>
@@ -52,6 +54,7 @@ function Nav() {
         </li>
         <li><a>Settings</a></li>
         <li><a>Logout</a></li>
+        <li><a><ThemeToggle/></a></li>
       </ul>
     </div>
     </div>
